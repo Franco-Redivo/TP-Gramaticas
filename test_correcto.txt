@@ -7,3 +7,5 @@ function generar_codigo_residuo(nivel_peligrosidad, cantidad_kilos, destino) {
 
     return codigo;
 }
+
+generar_codigo_residuo("Alto", 300, "Incineracion");

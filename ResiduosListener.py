@@ -71,6 +71,15 @@ class ResiduosListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by ResiduosParser#returnStatement.
+    def enterReturnStatement(self, ctx:ResiduosParser.ReturnStatementContext):
+        pass
+
+    # Exit a parse tree produced by ResiduosParser#returnStatement.
+    def exitReturnStatement(self, ctx:ResiduosParser.ReturnStatementContext):
+        pass
+
+
     # Enter a parse tree produced by ResiduosParser#functionCall.
     def enterFunctionCall(self, ctx:ResiduosParser.FunctionCallContext):
         pass
@@ -86,15 +95,6 @@ class ResiduosListener(ParseTreeListener):
 
     # Exit a parse tree produced by ResiduosParser#argumentList.
     def exitArgumentList(self, ctx:ResiduosParser.ArgumentListContext):
-        pass
-
-
-    # Enter a parse tree produced by ResiduosParser#returnStatement.
-    def enterReturnStatement(self, ctx:ResiduosParser.ReturnStatementContext):
-        pass
-
-    # Exit a parse tree produced by ResiduosParser#returnStatement.
-    def exitReturnStatement(self, ctx:ResiduosParser.ReturnStatementContext):
         pass
 
 

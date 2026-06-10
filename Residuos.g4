@@ -1,7 +1,7 @@
 grammar Residuos;
 
 program
-    : function+ EOF
+    : function+ (functionCall*';')? EOF
     ;
 
 function
@@ -33,7 +33,7 @@ ifStatement
 returnStatement
     : 'return' expression ';'
     ;
-    
+
 functionCall
     : VARIABLE '(' argumentList? ')'
     ;

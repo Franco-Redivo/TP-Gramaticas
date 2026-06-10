@@ -44,6 +44,11 @@ class ResiduosVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by ResiduosParser#returnStatement.
+    def visitReturnStatement(self, ctx:ResiduosParser.ReturnStatementContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by ResiduosParser#functionCall.
     def visitFunctionCall(self, ctx:ResiduosParser.FunctionCallContext):
         return self.visitChildren(ctx)
@@ -51,11 +56,6 @@ class ResiduosVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by ResiduosParser#argumentList.
     def visitArgumentList(self, ctx:ResiduosParser.ArgumentListContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by ResiduosParser#returnStatement.
-    def visitReturnStatement(self, ctx:ResiduosParser.ReturnStatementContext):
         return self.visitChildren(ctx)
 
 
