@@ -1,0 +1,15 @@
+function generar_codigo_residuo(
+    nivel_peligrosidad,
+    cantidad_kilos,
+    destino
+)
+{
+    if (cantidad_kilos > 450)
+    {
+        return "Error"
+    }
+
+    codigo = "Procesado";
+
+    return codigo;
+}

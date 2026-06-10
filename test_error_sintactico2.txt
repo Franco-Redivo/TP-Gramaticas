@@ -1,0 +1,4 @@
+function generar_codigo_residuo(
+{
+    return "Error";
+}
