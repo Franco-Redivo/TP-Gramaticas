@@ -30,6 +30,10 @@ ifStatement
     : 'if' '(' booleanExpression ')' block ('else' block)?
     ;
 
+returnStatement
+    : 'return' expression ';'
+    ;
+    
 functionCall
     : VARIABLE '(' argumentList? ')'
     ;
@@ -38,9 +42,6 @@ argumentList
     : expression (',' expression)*
     ;
 
-returnStatement
-    : 'return' expression ';'
-    ;
 
 booleanExpression
     : expression COMPARISON_OPERATOR expression
